@@ -1,0 +1,15 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { PageHero } from "../components/PageHero";
+
+export const metadata: Metadata = { title: "Software & Apps", description: "Explore software and apps built by Techpsyco, including Paycore and custom operational tools for growing businesses.", alternates: { canonical: "/software" } };
+
+export default function SoftwarePage() {
+  const softwareSchema = { "@context": "https://schema.org", "@type": "SoftwareApplication", name: "Paycore", applicationCategory: "FinanceApplication", operatingSystem: "Web", creator: { "@type": "Organization", name: "Techpsyco" }, description: "A digital finance product designed to simplify everyday money operations." };
+  return <main id="main"><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} /><PageHero eyebrow="Software by Techpsyco" title="Useful products, built with the same care as our client work." text="A growing catalogue of apps and software designed to make important work clearer, faster and easier to manage." />
+    <section className="section section-compact"><div className="container product-catalogue">
+      <article className="software-feature" id="paycore"><div className="software-visual"><span className="product-icon product-icon-large">P</span><span className="status">Product preview</span></div><div><p className="eyebrow">Finance software</p><h2>Paycore</h2><p className="lead-sm">A focused digital finance product created to make everyday money operations easier to understand and manage.</p><div className="tag-row"><span>Web app</span><span>Finance</span><span>Responsive</span></div><div className="actions"><a className="button" href="mailto:hello@techpsyco.com?subject=Paycore%20access">Request access</a><a className="text-link" href="mailto:hello@techpsyco.com?subject=Paycore%20download">Ask about download →</a></div></div></article>
+      <div className="catalogue-note"><div><p className="eyebrow">More releases</p><h2>New products are being prepared.</h2></div><p>We publish new Techpsyco tools here as they become available. Need a direct product link or installer added? Send the release details and this catalogue is ready for it.</p></div>
+      <div className="solution-grid"><article><span>01</span><h3>Client portals</h3><p>Secure, branded spaces that bring customers, files, updates and actions together.</p></article><article><span>02</span><h3>Operations tools</h3><p>Internal software that makes repeatable work easier to track and complete.</p></article><article><span>03</span><h3>Automation products</h3><p>Focused utilities that connect services and move business data with less effort.</p></article></div>
+    </div></section><section className="cta-section"><div className="container cta-box"><div><p className="eyebrow">Need software built?</p><h2>Turn your process or product idea into something people can use.</h2></div><Link className="button button-light" href="/contact">Build custom software</Link></div></section></main>;
+}
