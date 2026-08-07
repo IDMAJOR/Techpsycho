@@ -3,18 +3,18 @@ import Link from "next/link";
 const services = [
   [
     "01",
-    "High-performance websites",
-    "Fast, responsive websites shaped around search visibility, trust and conversion.",
+    "Product engineering",
+    "Reliable software products designed around clear needs, smooth experiences and long-term usefulness.",
   ],
   [
     "02",
-    "Custom software",
-    "Focused web apps, portals and internal tools designed around the way your team works.",
+    "Financial technology",
+    "Accessible digital finance tools that make everyday money operations easier to understand and manage.",
   ],
   [
     "03",
-    "Automation & systems",
-    "Connected workflows that reduce repetitive work and turn scattered processes into dependable systems.",
+    "Intelligent systems",
+    "Connected platforms and automation that simplify complex processes and make information more useful.",
   ],
 ];
 
@@ -26,7 +26,7 @@ export default function Home() {
     url: "https://techpsyco.com",
     email: "hello@techpsyco.com",
     description:
-      "A digital product studio building websites, software and intelligent systems.",
+      "A software company creating useful products and intelligent digital systems.",
   };
   return (
     <main id="main">
@@ -37,20 +37,20 @@ export default function Home() {
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <p className="eyebrow">Independent digital product studio</p>
+            <p className="eyebrow">Independent software company</p>
             <h1>
               Digital systems that <span>move business forward.</span>
             </h1>
             <p className="lead">
-              Techpsyco builds fast websites, useful software and intelligent
-              workflows for teams ready to grow with less friction.
+              Techpsyco creates software products and intelligent digital
+              systems that make everyday life and important work simpler.
             </p>
             <div className="actions">
-              <Link className="button" href="/contact">
-                Build with us <span aria-hidden="true">↗</span>
+              <Link className="button" href="/software">
+                Explore our software <span aria-hidden="true">↗</span>
               </Link>
-              <Link className="text-link" href="/work">
-                See how we work <span aria-hidden="true">→</span>
+              <Link className="text-link" href="/software#paycore">
+                Discover Paycore <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
@@ -87,11 +87,11 @@ export default function Home() {
         <div className="container section-heading">
           <div>
             <p className="eyebrow">What we build</p>
-            <h2>One studio. Three ways to make your Life smarter.</h2>
+            <h2>One company. Software designed to make life smarter.</h2>
           </div>
           <p>
-            Strategy, design and development stay connected from the first
-            decision to the final release.
+            We research, design, engineer and improve every product as one
+            connected company.
           </p>
         </div>
         <div className="container service-list">
@@ -116,8 +116,8 @@ export default function Home() {
             <p className="eyebrow">Software by Techpsyco</p>
             <h2>Products made to solve real operational problems.</h2>
             <p className="lead-sm">
-              Explore apps and software created by our studio, from financial
-              tools to tailored business platforms.
+              Explore products created and operated by Techpsyco, beginning
+              with smarter financial technology and expanding into new platforms.
             </p>
             <Link className="button" href="/software">
               Explore software
@@ -143,47 +143,47 @@ export default function Home() {
       <section className="section">
         <div className="container process-grid">
           <div>
-            <p className="eyebrow">A clearer process</p>
+            <p className="eyebrow">How we build products</p>
             <h2>From a hard problem to a useful product.</h2>
           </div>
           <ol>
             <li>
               <span>01</span>
               <div>
-                <h3>Understand</h3>
+                <h3>Research</h3>
                 <p>
-                  We clarify the goal, audience, constraints and commercial
-                  opportunity.
+                  We study real problems, user behaviour and the opportunity
+                  for software to make a meaningful difference.
                 </p>
               </div>
             </li>
             <li>
               <span>02</span>
               <div>
-                <h3>Shape</h3>
+                <h3>Design</h3>
                 <p>
-                  We turn strategy into a focused experience and a practical
-                  delivery plan.
+                  We turn insight into a focused product experience that feels
+                  clear from the first interaction.
                 </p>
               </div>
             </li>
             <li>
               <span>03</span>
               <div>
-                <h3>Build</h3>
+                <h3>Engineer</h3>
                 <p>
-                  We develop, test and optimize every critical path for
-                  real-world use.
+                  We develop, test and optimize dependable systems for
+                  real-world performance and scale.
                 </p>
               </div>
             </li>
             <li>
               <span>04</span>
               <div>
-                <h3>Improve</h3>
+                <h3>Evolve</h3>
                 <p>
-                  We learn from performance and strengthen the system after
-                  launch.
+                  We learn from how products are used and keep strengthening
+                  every release.
                 </p>
               </div>
             </li>
@@ -194,11 +194,11 @@ export default function Home() {
       <section className="cta-section">
         <div className="container cta-box">
           <div>
-            <p className="eyebrow">Have a serious idea?</p>
-            <h2>Let’s build the system behind your next stage of growth.</h2>
+            <p className="eyebrow">Software by Techpsyco</p>
+            <h2>See the products we are building for a smarter digital future.</h2>
           </div>
-          <Link className="button button-light" href="/contact">
-            Start a conversation
+          <Link className="button button-light" href="/software">
+            Explore our products
           </Link>
         </div>
       </section>

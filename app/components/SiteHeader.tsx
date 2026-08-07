@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const links = [
-  ["Services", "/services"],
+  ["Technology", "/services"],
   ["Software", "/software"],
-  ["Work", "/work"],
+  ["Approach", "/work"],
   ["About", "/about"],
 ];
 
@@ -17,13 +17,13 @@ export function SiteHeader() {
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {links.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
-          <Link className="button button-small" href="/contact">Start a project</Link>
+          <Link className="button button-small" href="/software">Explore software</Link>
         </nav>
         <details className="mobile-nav">
           <summary aria-label="Open navigation">Menu</summary>
           <nav aria-label="Mobile navigation">
             {links.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
-            <Link href="/contact">Start a project</Link>
+            <Link href="/software">Explore software</Link>
           </nav>
         </details>
       </div>
