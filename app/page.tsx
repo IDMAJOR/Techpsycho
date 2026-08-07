@@ -28,6 +28,7 @@ export default function Home() {
     description:
       "A software company creating useful products and intelligent digital systems.",
   };
+  // This is a log
   return (
     <main id="main">
       <script
@@ -116,8 +117,8 @@ export default function Home() {
             <p className="eyebrow">Software by Techpsyco</p>
             <h2>Products made to solve real operational problems.</h2>
             <p className="lead-sm">
-              Explore products created and operated by Techpsyco, beginning
-              with smarter financial technology and expanding into new platforms.
+              Explore products created and operated by Techpsyco, beginning with
+              smarter financial technology and expanding into new platforms.
             </p>
             <Link className="button" href="/software">
               Explore software
@@ -152,8 +153,8 @@ export default function Home() {
               <div>
                 <h3>Research</h3>
                 <p>
-                  We study real problems, user behaviour and the opportunity
-                  for software to make a meaningful difference.
+                  We study real problems, user behaviour and the opportunity for
+                  software to make a meaningful difference.
                 </p>
               </div>
             </li>
@@ -195,7 +196,9 @@ export default function Home() {
         <div className="container cta-box">
           <div>
             <p className="eyebrow">Software by Techpsyco</p>
-            <h2>See the products we are building for a smarter digital future.</h2>
+            <h2>
+              See the products we are building for a smarter digital future.
+            </h2>
           </div>
           <Link className="button button-light" href="/software">
             Explore our products
