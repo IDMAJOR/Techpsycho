@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
-          <Link className="brand" href="/"><span className="brand-mark" aria-hidden="true"><i /><i /><i /></span><span>TECHPSYCO</span></Link>
+          <Link className="brand" href="/"><img className="brand-logo" src="/brand-logo.png" alt="" width="40" height="40" /><span>TECHPSYCO</span></Link>
           <p>Software products built with clarity, speed and purpose.</p>
         </div>
         <div className="footer-links">

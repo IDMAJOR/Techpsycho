@@ -12,10 +12,7 @@ a { color:inherit; text-decoration:none; }
 .site-header { position:sticky; top:0; z-index:50; border-bottom:1px solid rgba(99,245,66,.12); background:rgba(5,8,5,.88); backdrop-filter:blur(18px); }
 .nav-shell { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
 .brand { display:inline-flex; align-items:center; gap:11px; font-weight:850; font-size:.94rem; letter-spacing:.12em; }
-.brand-mark { width:25px; height:25px; display:grid; gap:3px; transform:skew(-10deg); }
-.brand-mark i { display:block; height:5px; background:var(--green); }
-.brand-mark i:nth-child(2) { width:72%; }
-.brand-mark i:nth-child(3) { width:42%; }
+.brand-logo { width:40px; height:40px; display:block; object-fit:contain; transform:scale(1.28); }
 .desktop-nav { display:flex; align-items:center; gap:28px; color:#c6d0c5; font-size:.9rem; }
 .desktop-nav a:not(.button):hover,.footer-links a:hover { color:var(--green); }
 .mobile-nav { display:none; position:relative; }

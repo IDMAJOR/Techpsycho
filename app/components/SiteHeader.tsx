@@ -12,7 +12,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="container nav-shell">
         <Link className="brand" href="/" aria-label="Techpsyco home">
-          <span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>
+          <img className="brand-logo" src="/brand-logo.png" alt="" width="40" height="40" />
           <span>TECHPSYCO</span>
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
