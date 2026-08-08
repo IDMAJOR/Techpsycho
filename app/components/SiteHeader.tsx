@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 const links = [
   ["Technology", "/services"],
@@ -11,9 +11,9 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="container nav-shell">
-        <Link className="brand" href="/" aria-label="Techpsyco home">
+        <Link className="brand" href="/" aria-label="Techpsycho home">
           <img className="brand-logo" src="/brand-logo.png" alt="" width="40" height="40" />
-          <span>TECHPSYCO</span>
+          <span>TECHPSYCHO</span>
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           {links.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 const services = [
   [
@@ -22,9 +22,9 @@ export default function Home() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Techpsyco",
-    url: "https://techpsyco.com",
-    email: "hello@techpsyco.com",
+    name: "Techpsycho",
+    url: "https://www.techpsycho.com.ng",
+    email: "hello@techpsycho.com",
     description:
       "A software company creating useful products and intelligent digital systems.",
   };
@@ -43,19 +43,19 @@ export default function Home() {
               Digital systems that <span>move business forward.</span>
             </h1>
             <p className="lead">
-              Techpsyco creates software products and intelligent digital
+              Techpsycho creates software products and intelligent digital
               systems that make everyday life and important work simpler.
             </p>
             <div className="actions">
               <Link className="button" href="/software">
-                Explore our software <span aria-hidden="true">↗</span>
+                Explore our software <span aria-hidden="true">â†—</span>
               </Link>
               <Link className="text-link" href="/software#paycore">
-                Discover Paycore <span aria-hidden="true">→</span>
+                Discover Paycore <span aria-hidden="true">â†’</span>
               </Link>
             </div>
           </div>
-          <div className="system-card" aria-label="Techpsyco capabilities">
+          <div className="system-card" aria-label="Techpsycho capabilities">
             <div className="system-top">
               <span>System online</span>
               <span className="live-dot">Live</span>
@@ -104,7 +104,7 @@ export default function Home() {
                 <p>{text}</p>
               </div>
               <Link href="/services" aria-label={`Learn about ${title}`}>
-                ↗
+                â†—
               </Link>
             </article>
           ))}
@@ -114,10 +114,10 @@ export default function Home() {
       <section className="section section-tint">
         <div className="container split-feature">
           <div>
-            <p className="eyebrow">Software by Techpsyco</p>
+            <p className="eyebrow">Software by Techpsycho</p>
             <h2>Products made to solve real operational problems.</h2>
             <p className="lead-sm">
-              Explore products created and operated by Techpsyco, beginning with
+              Explore products created and operated by Techpsycho, beginning with
               smarter financial technology and expanding into new platforms.
             </p>
             <Link className="button" href="/software">
@@ -134,7 +134,7 @@ export default function Home() {
                 money operations clearer and easier to manage.
               </p>
               <Link href="/software#paycore">
-                View product <span aria-hidden="true">→</span>
+                View product <span aria-hidden="true">â†’</span>
               </Link>
             </div>
           </div>
@@ -195,7 +195,7 @@ export default function Home() {
       <section className="cta-section">
         <div className="container cta-box">
           <div>
-            <p className="eyebrow">Software by Techpsyco</p>
+            <p className="eyebrow">Software by Techpsycho</p>
             <h2>
               See the products we are building for a smarter digital future.
             </h2>

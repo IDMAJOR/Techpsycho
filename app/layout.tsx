@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
 import { SiteHeader } from "./components/SiteHeader";
@@ -6,36 +6,35 @@ import { SiteFooter } from "./components/SiteFooter";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "techpsyco.com";
+  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "www.techpsycho.com.ng";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.includes("localhost") ? "http" : "https");
   const origin = `${protocol}://${host}`;
 
   return {
     metadataBase: new URL(origin),
-    title: { default: "Techpsyco | Software Products & Digital Systems", template: "%s | Techpsyco" },
-    description: "Techpsyco is a software company creating useful digital products, intelligent platforms and dependable systems for everyday life and business.",
-    keywords: ["software company", "software products", "fintech software", "digital platforms", "business software", "automation technology", "Paycore", "Techpsyco"],
-    authors: [{ name: "Techpsyco" }],
-    creator: "Techpsyco",
-    publisher: "Techpsyco",
+    title: { default: "Techpsycho | Software Products & Digital Systems", template: "%s | Techpsycho" },
+    description: "Techpsycho is a software company creating useful digital products, intelligent platforms and dependable systems for everyday life and business.",
+    keywords: ["software company", "software products", "fintech software", "digital platforms", "business software", "automation technology", "Paycore", "Techpsycho"],
+    authors: [{ name: "Techpsycho" }],
+    creator: "Techpsycho",
+    publisher: "Techpsycho",
     alternates: { canonical: "/" },
     openGraph: {
       type: "website",
       locale: "en_US",
-      siteName: "Techpsyco",
-      title: "Techpsyco — Software Products & Digital Systems",
+      siteName: "Techpsycho",
+      title: "Techpsycho — Software Products & Digital Systems",
       description: "Software that makes important work and everyday life simpler.",
       url: origin,
-      images: [{ url: `${origin}/og.png`, width: 1792, height: 928, alt: "Techpsyco software products and digital systems" }],
+      images: [{ url: `${origin}/og.png`, width: 1792, height: 928, alt: "Techpsycho software products and digital systems" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Techpsyco — Software Products & Digital Systems",
+      title: "Techpsycho — Software Products & Digital Systems",
       description: "Software that makes important work and everyday life simpler.",
       images: [`${origin}/og.png`],
     },
     robots: { index: true, follow: true },
-    icons: { icon: "/brand-logo.png", shortcut: "/brand-logo.png", apple: "/brand-logo.png" },
   };
 }
 
