@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(origin),
     title: { default: "Techpsycho | Software Products & Digital Systems", template: "%s | Techpsycho" },
     description: "Techpsycho is a software company creating useful digital products, intelligent platforms and dependable systems for everyday life and business.",
-    keywords: ["software company", "software products", "fintech software", "digital platforms", "business software", "automation technology", "Paycore", "Techpsycho"],
+    keywords: ["software company", "software products", "Android apps", "movie recognition app", "fintech software", "digital platforms", "business software", "Vident", "Paycore", "Techpsycho"],
     authors: [{ name: "Techpsycho" }],
     creator: "Techpsycho",
     publisher: "Techpsycho",

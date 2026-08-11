@@ -1,2 +1,2 @@
 ﻿import type { MetadataRoute } from "next";
-export default function manifest(): MetadataRoute.Manifest { return { name: "Techpsycho", short_name: "Techpsycho", description: "Software products and intelligent digital systems.", start_url: "/", display: "standalone", background_color: "#050805", theme_color: "#63f542", icons: [{ src: "/techpsycho-favicon-v3.png", sizes: "1024x1024", type: "image/png" }] }; }
+export default function manifest(): MetadataRoute.Manifest { return { name: "Techpsycho", short_name: "Techpsycho", description: "Software products and intelligent digital systems.", start_url: "/", display: "standalone", background_color: "#050805", theme_color: "#63f542", icons: [{ src: "/techpsycho-favicon-v5.png", sizes: "199x199", type: "image/png" }] }; }

@@ -1,6 +1,6 @@
 ﻿import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.techpsycho.com.ng";
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://techpsycho.com.ng";
   return { rules: { userAgent: "*", allow: "/" }, sitemap: `${base}/sitemap.xml`, host: base };
 }

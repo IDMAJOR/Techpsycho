@@ -1,15 +1,106 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "../components/PageHero";
 
-export const metadata: Metadata = { title: "Software & Apps", description: "Explore software products created by Techpsycho, including Paycore and the companyâ€™s growing portfolio of useful digital platforms.", alternates: { canonical: "/software" } };
+export const metadata: Metadata = {
+  title: "Software & Apps",
+  description:
+    "Explore Vident, Paycore and the growing portfolio of software products created by Techpsycho.",
+  alternates: { canonical: "/software" },
+};
+
+const products = [
+  {
+    name: "Vident",
+    category: "Entertainment discovery",
+    description:
+      "Identify movies and series from a description, screenshot or short clip, then discover useful title details and where to watch.",
+    href: "/vident",
+    status: "Android app",
+    icon: "V",
+    className: "vident-product",
+    tags: ["Android", "AI recognition", "Movie discovery"],
+  },
+  {
+    name: "Paycore",
+    category: "Finance software",
+    description:
+      "A focused digital finance product created to make everyday money operations easier to understand and manage.",
+    href: "/paycore",
+    status: "Product preview",
+    icon: "P",
+    className: "paycore-product",
+    tags: ["Web app", "Finance", "Responsive"],
+  },
+];
 
 export default function SoftwarePage() {
-  const softwareSchema = { "@context": "https://schema.org", "@type": "SoftwareApplication", name: "Paycore", applicationCategory: "FinanceApplication", operatingSystem: "Web", creator: { "@type": "Organization", name: "Techpsycho" }, description: "A digital finance product designed to simplify everyday money operations." };
-  return <main id="main"><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} /><PageHero eyebrow="Software by Techpsycho" title="Useful products, built to solve real problems." text="A growing portfolio of software created and operated by Techpsycho to make important work and everyday life clearer, faster and easier to manage." />
-    <section className="section section-compact"><div className="container product-catalogue">
-      <article className="software-feature" id="paycore"><div className="software-visual"><span className="product-icon product-icon-large">P</span><span className="status">Product preview</span></div><div><p className="eyebrow">Finance software</p><h2>Paycore</h2><p className="lead-sm">A focused digital finance product created to make everyday money operations easier to understand and manage.</p><div className="tag-row"><span>Web app</span><span>Finance</span><span>Responsive</span></div><div className="actions"><a className="button" href="mailto:hello@techpsycho.com?subject=Paycore%20access">Request access</a><a className="text-link" href="mailto:hello@techpsycho.com?subject=Paycore%20download">Ask about download â†’</a></div></div></article>
-      <div className="catalogue-note"><div><p className="eyebrow">More releases</p><h2>New products are being prepared.</h2></div><p>Techpsycho is building a growing portfolio of useful software. New product links and downloads will appear here as each release becomes available.</p></div>
-      <div className="solution-grid"><article><span>01</span><h3>Financial platforms</h3><p>Accessible products that make money operations clearer, safer and easier to manage.</p></article><article><span>02</span><h3>Operations software</h3><p>Purposeful products that simplify repeatable work and improve everyday visibility.</p></article><article><span>03</span><h3>Automation products</h3><p>Focused tools that connect services, information and intelligent workflows.</p></article></div>
-    </div></section><section className="cta-section"><div className="container cta-box"><div><p className="eyebrow">Building what comes next</p><h2>Follow Techpsycho as our software portfolio continues to grow.</h2></div><Link className="button button-light" href="/contact">Product enquiries</Link></div></section></main>;
+  const softwareSchema = {
+    "@context": "https://schema.org",
+    "@graph": products.map((product) => ({
+      "@type": "SoftwareApplication",
+      name: product.name,
+      url: `https://techpsycho.com.ng${product.href}`,
+      creator: { "@type": "Organization", name: "Techpsycho" },
+      description: product.description,
+    })),
+  };
+
+  return (
+    <main id="main">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
+      <PageHero
+        eyebrow="Software by Techpsycho"
+        title="Useful products, built to solve real problems."
+        text="A growing portfolio of software created and operated by Techpsycho to make important work and everyday life clearer, faster and easier to manage."
+      />
+      <section className="section section-compact">
+        <div className="container product-catalogue">
+          <div className="product-index" aria-label="Techpsycho products">
+            {products.map((product, index) => (
+              <article className={`product-index-card ${product.className}`} key={product.name}>
+                <div className="product-index-top">
+                  <span className="product-index-number">0{index + 1}</span>
+                  <span className="status status-inline">{product.status}</span>
+                </div>
+                <span className="product-icon" aria-hidden="true">{product.icon}</span>
+                <p className="eyebrow">{product.category}</p>
+                <h2>{product.name}</h2>
+                <p>{product.description}</p>
+                <div className="tag-row">
+                  {product.tags.map((tag) => <span key={tag}>{tag}</span>)}
+                </div>
+                <Link className="text-link" href={product.href}>
+                  Explore {product.name} <span aria-hidden="true">→</span>
+                </Link>
+              </article>
+            ))}
+          </div>
+
+          <div className="catalogue-note">
+            <div>
+              <p className="eyebrow">Built and operated here</p>
+              <h2>Products with a clear owner and a long-term purpose.</h2>
+            </div>
+            <p>
+              Techpsycho designs, engineers and improves each product as part of one connected
+              software company, with dedicated product information and support.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="cta-section">
+        <div className="container cta-box">
+          <div>
+            <p className="eyebrow">Product support</p>
+            <h2>Questions about a Techpsycho product?</h2>
+          </div>
+          <Link className="button button-light" href="/contact">Contact Techpsycho</Link>
+        </div>
+      </section>
+    </main>
+  );
 }

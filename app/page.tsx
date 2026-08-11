@@ -48,10 +48,10 @@ export default function Home() {
             </p>
             <div className="actions">
               <Link className="button" href="/software">
-                Explore our software <span aria-hidden="true">â†—</span>
+                Explore our software <span aria-hidden="true">↗</span>
               </Link>
-              <Link className="text-link" href="/software#paycore">
-                Discover Paycore <span aria-hidden="true">â†’</span>
+              <Link className="text-link" href="/vident">
+                Discover Vident <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function Home() {
                 <p>{text}</p>
               </div>
               <Link href="/services" aria-label={`Learn about ${title}`}>
-                â†—
+                ↗
               </Link>
             </article>
           ))}
@@ -117,26 +117,32 @@ export default function Home() {
             <p className="eyebrow">Software by Techpsycho</p>
             <h2>Products made to solve real operational problems.</h2>
             <p className="lead-sm">
-              Explore products created and operated by Techpsycho, beginning with
-              smarter financial technology and expanding into new platforms.
+              Explore products created and operated by Techpsycho across
+              intelligent entertainment discovery and financial technology.
             </p>
             <Link className="button" href="/software">
               Explore software
             </Link>
           </div>
-          <div className="product-preview">
-            <span className="product-icon">P</span>
-            <div>
-              <p className="eyebrow">Featured product</p>
-              <h3>Paycore</h3>
-              <p>
-                A focused digital finance product designed to make everyday
-                money operations clearer and easier to manage.
-              </p>
-              <Link href="/software#paycore">
-                View product <span aria-hidden="true">â†’</span>
-              </Link>
-            </div>
+          <div className="featured-product-stack">
+            <article className="product-preview product-preview-vident">
+              <span className="product-icon vident-icon">V</span>
+              <div>
+                <p className="eyebrow">Android app</p>
+                <h3>Vident</h3>
+                <p>Identify movies and series from a description, screenshot or short clip.</p>
+                <Link href="/vident">View Vident <span aria-hidden="true">→</span></Link>
+              </div>
+            </article>
+            <article className="product-preview product-preview-compact">
+              <span className="product-icon">P</span>
+              <div>
+                <p className="eyebrow">Finance software</p>
+                <h3>Paycore</h3>
+                <p>Everyday money operations, made clearer and easier to manage.</p>
+                <Link href="/paycore">View Paycore <span aria-hidden="true">→</span></Link>
+              </div>
+            </article>
           </div>
         </div>
       </section>
