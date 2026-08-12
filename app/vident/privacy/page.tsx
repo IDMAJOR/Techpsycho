@@ -24,8 +24,9 @@ const sections = [
   ["sharing", "6. Service providers and sharing"],
   ["retention", "7. Retention and security"],
   ["rights", "8. Your choices and rights"],
-  ["children", "9. Children’s privacy"],
-  ["changes", "10. Changes and contact"],
+  ["deletion", "9. Account and data deletion"],
+  ["children", "10. Children’s privacy"],
+  ["changes", "11. Changes and contact"],
 ];
 
 export default function VidentPrivacyPage() {
@@ -36,7 +37,7 @@ export default function VidentPrivacyPage() {
     url: "https://techpsycho.com.ng/vident/privacy",
     isPartOf: { "@type": "SoftwareApplication", name: "Vident" },
     publisher: { "@type": "Organization", name: "Techpsycho" },
-    dateModified: "2026-08-11",
+    dateModified: "2026-08-12",
   };
 
   return (
@@ -48,7 +49,7 @@ export default function VidentPrivacyPage() {
           <p className="eyebrow">Vident legal</p>
           <h1>Privacy Policy</h1>
           <p className="lead">This policy explains what information Vident handles, why it is needed, and the choices available to you.</p>
-          <div className="legal-meta"><span>Effective August 11, 2026</span><span>Last updated August 11, 2026</span></div>
+          <div className="legal-meta"><span>Effective August 11, 2026</span><span>Last updated August 12, 2026</span></div>
         </div>
       </header>
 
@@ -136,13 +137,21 @@ export default function VidentPrivacyPage() {
               <p>You may also control notification and advertising settings through Vident, Google or Android where those controls are available. Cancelling Vident Premium must be completed through Google Play; deleting your Vident account does not automatically cancel an active Google Play subscription.</p>
             </section>
 
+            <section id="deletion">
+              <h2>9. Account and data deletion</h2>
+              <p>You can permanently delete your Vident account from Profile → Delete account in the Android app. Email-and-password users can also verify and delete directly at <a href="/vident/delete-account">the public Vident deletion page</a>. If you cannot access the app or use Google sign-in, that page also provides a deletion-request path; Techpsycho verifies ownership before deleting anything.</p>
+              <p>Deletion removes the Vident profile, authentication linkage, active sessions, recognition usage records, reward claims, linked trailer saves and comments, and the stored Premium entitlement association. Recognition media is not maintained as a permanent account media library.</p>
+              <p>A minimal audit record containing a random request identifier, completion time and deletion method may be retained for up to one year for security and accountability. Limited records may also be retained where genuinely required for fraud prevention, financial reconciliation or law. General profile information and recognition history are not retained under this exception.</p>
+              <p>Deleting a Vident account does not cancel a subscription managed by Google Play. Manage or cancel the subscription separately in Google Play before deleting the account.</p>
+            </section>
+
             <section id="children">
-              <h2>9. Children’s privacy</h2>
+              <h2>10. Children’s privacy</h2>
               <p>Vident is not directed to children under 13, or any higher minimum age required in their country, and we do not knowingly collect personal information from children below that age. If you believe a child has provided information, contact us so we can investigate and take appropriate action.</p>
             </section>
 
             <section id="changes">
-              <h2>10. Changes and contact</h2>
+              <h2>11. Changes and contact</h2>
               <p>We may update this policy as Vident, our providers or legal requirements change. We will publish the revised policy here and update the date above. Where required, we will provide additional notice or request consent.</p>
               <p>Questions, complaints and privacy requests can be sent to <a href="mailto:techpsycho94@gmail.com?subject=Vident%20privacy">techpsycho94@gmail.com</a>.</p>
               <address>Techpsycho<br />Vident Privacy Team<br />Nigeria</address>

@@ -153,6 +153,46 @@ h3 { font-size:1.45rem; }
   .work-stack article { grid-template-columns:1fr; gap:16px; }.work-stack article>p { grid-column:auto; }
   .footer-grid { grid-template-columns:1fr; }.footer-grid>div:first-child { grid-column:auto; }
 }
+
+/* Vident account deletion */
+.deletion-hero { background:radial-gradient(circle at 75% 20%,rgba(196,58,88,.13),transparent 32%); }
+.deletion-layout { display:grid; grid-template-columns:minmax(0,.9fr) minmax(360px,.7fr); gap:80px; align-items:start; }
+.deletion-copy section { margin-bottom:45px; }
+.deletion-copy h2,.deletion-panel h2 { font-size:clamp(1.7rem,3vw,2.6rem); }
+.deletion-copy p,.deletion-list { color:#b6c0b5; }
+.deletion-copy a { color:#cdbaff; text-decoration:underline; text-underline-offset:3px; }
+.deletion-list { padding-left:22px; }
+.deletion-list li { margin:9px 0; }
+.deletion-list li::marker { color:#9c67ff; }
+.retention-card,.subscription-card { padding:28px; border:1px solid var(--line); background:var(--surface); }
+.subscription-card { border-color:#59451f; background:#110e08; }
+.deletion-panel { position:sticky; top:164px; padding:32px; border:1px solid #3b304e; background:#0d0a13; }
+.deletion-tabs { margin-bottom:30px; display:grid; grid-template-columns:1fr 1fr; gap:5px; padding:5px; background:#08070c; }
+.deletion-tabs button { min-height:42px; padding:8px; color:#90899a; border:0; background:transparent; font:700 .78rem inherit; cursor:pointer; }
+.deletion-tabs button[aria-selected="true"] { color:#fff; background:#251a36; }
+.deletion-panel form>p:not(.eyebrow),.form-note { color:#a9a1b2; }
+.deletion-panel label { margin:18px 0 7px; display:block; color:#e8e1ef; font-size:.83rem; font-weight:750; }
+.deletion-panel input,.deletion-panel textarea { width:100%; padding:13px 14px; color:#fff; border:1px solid #41364e; border-radius:2px; background:#09080d; font:inherit; }
+.deletion-panel input:focus,.deletion-panel textarea:focus { outline:2px solid #9560ff; outline-offset:2px; }
+.deletion-panel .button,.danger-button { width:100%; margin-top:22px; }
+.danger-button { min-height:50px; padding:12px 18px; color:white; border:1px solid #e1536d; border-radius:2px; background:#b82748; font-weight:850; cursor:pointer; }
+.deletion-panel button:disabled { opacity:.55; cursor:wait; }
+.form-note { font-size:.78rem; }
+.form-status { margin:20px 0 0; padding:13px; border-left:3px solid #7f6b91; background:#0a090d; }
+.form-status.success { color:#a9ff9a; border-color:#63f542; }
+.form-status.error { color:#ff9dac; border-color:#e1536d; }
+.play-manage-link { margin-top:22px; padding-top:18px; display:flex; justify-content:space-between; gap:20px; color:#d7c7f2; border-top:1px solid var(--line); font-weight:750; }
+
+@media (max-width:900px) {
+  .deletion-layout { grid-template-columns:1fr; }
+  .deletion-panel { position:static; }
+}
+
+@media (max-width:600px) {
+  .deletion-panel { padding:24px; }
+  .deletion-tabs { grid-template-columns:1fr; }
+  .product-subnav-inner>div { overflow-x:auto; }
+}
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; } }
 
 /* Product catalogue */

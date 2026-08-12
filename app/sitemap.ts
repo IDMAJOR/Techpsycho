@@ -2,7 +2,7 @@
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://techpsycho.com.ng";
-  const routes = ["", "/services", "/software", "/vident", "/vident/privacy", "/vident/terms", "/paycore", "/work", "/about", "/contact", "/privacy"];
+  const routes = ["", "/services", "/software", "/vident", "/vident/privacy", "/vident/terms", "/vident/delete-account", "/paycore", "/work", "/about", "/contact", "/privacy"];
   return routes.map((route, index) => ({
     url: `${base}${route}`,
     lastModified: new Date(),

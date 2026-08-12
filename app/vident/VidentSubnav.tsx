@@ -9,6 +9,7 @@ export function VidentSubnav() {
           <Link href="/vident">Overview</Link>
           <Link href="/vident/privacy">Privacy</Link>
           <Link href="/vident/terms">Terms</Link>
+          <Link href="/vident/delete-account">Delete account</Link>
         </div>
       </div>
     </nav>

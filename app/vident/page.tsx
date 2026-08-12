@@ -101,7 +101,7 @@ export default function VidentPage() {
       <section className="section">
         <div className="container legal-promo">
           <div><p className="eyebrow">Privacy and transparency</p><h2>Clear information about how Vident works.</h2><p>Review how recognition media, account information, advertising consent and subscriptions are handled.</p></div>
-          <div className="legal-link-list"><Link href="/vident/privacy">Vident Privacy Policy <span aria-hidden="true">→</span></Link><Link href="/vident/terms">Vident Terms of Service <span aria-hidden="true">→</span></Link><a href="mailto:techpsycho94@gmail.com?subject=Vident%20support">Vident support <span aria-hidden="true">→</span></a></div>
+          <div className="legal-link-list"><Link href="/vident/privacy">Vident Privacy Policy <span aria-hidden="true">→</span></Link><Link href="/vident/terms">Vident Terms of Service <span aria-hidden="true">→</span></Link><Link href="/vident/delete-account">Account &amp; Data Deletion <span aria-hidden="true">→</span></Link><a href="mailto:techpsycho94@gmail.com?subject=Vident%20support">Vident support <span aria-hidden="true">→</span></a></div>
         </div>
       </section>
 
